@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 20px;
+}
+body{
+    max-width: 100%;
+}
+img{
+    width: 100%;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../images/home-bg.jpg');
+    background-size: cover;
+}
+.content{
+    align-self: center;
+    width: 55%;
+}
+.content h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.content p{
+    color: grey;
+}
+.btn{
+    background-color: #FFC727;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.image{
+    width: 45%;
+}
+
+@media (max-width:600px) {
+    .home{
+        flex-direction: column;
+    }
+    .content,.image{
+        width: 100%;
+    }
+}
